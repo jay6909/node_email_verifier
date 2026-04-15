@@ -10,14 +10,14 @@ Ultra-fast email verification for Node.js, powered by a Go-compiled native engin
 ## Installation
 
 ```bash
-npm install @anclp/emailverifier
+npm install @anclp/node_email_verifier
 
 Why this package?
 
 Most Node.js email validators only check syntax with RegEx. This package uses a native Go binary to perform actual DNS lookups, making it significantly more reliable and faster for bulk verification.
 Usage
 javascript
-const { verifyEmail } = require('@anclp/emailverifier');
+const { verifyEmail } = require('@anclp/node_email_verifier');
 
 // Perform a full check (Syntax + MX Records)
 const isValid = verifyEmail("test@example.com");
